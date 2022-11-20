@@ -1,0 +1,346 @@
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" href={% static 'styles.css' %}>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<style>
+     h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    position: relative;
+    animation: 
+      typing 3.5s steps(40),
+      blink-caret .75s step-end infinite;
+      font-size: 40px;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  .text2
+  {
+    margin-top: 5px;
+    padding: 10px;
+  }
+  .btn-primary
+  {
+    background-color: orange;
+    margin-left: 10px;
+  }
+
+  .jumbotron-fluid {
+  position: relative;
+
+}
+
+.jumbotron-fluid h3 {
+  color: #fff;
+  font-size: 5em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin-left: 450px;
+}
+
+.jumbotron-fluid h3:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+.jumbotron-fluid :nth-child(2) {
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+  
+}
+
+
+  
+
+.line
+{   margin-top: 100px;
+    border-top:3px solid aqua;
+    animation-name: line2;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+    margin-right: 770px;
+}
+@keyframes line2{
+    from{width: 0px;}
+    to{width: 420px;}
+}
+.im
+{
+    border: 1px solid whitesmoke;
+}
+.col-md-3
+{
+    background-color: rgb(225, 151, 38);
+    color: whitesmoke;
+}
+/*    */
+.center-ball
+{
+  border-top: 5px solid aqua;
+  width: 150px;
+}
+</style>
+
+<body>
+  
+<div class="container-fluid bg-dark ">
+    <div class="row">
+<div class="col-lg-10">
+ <h2 class="text2 ml-2"> Hello,I am Faizal Imam </h2>
+ <p class="text2  ml-2" > Welcome to My Portfolio page,I am a Full stack webdeveloper and a self learned ethical hacker,I have a great interest in developing sites and seeking them to make the ,<br>  secure in this web world.I use web languages Like HTML,CSS And bootstrap and for Backened i use Django Framework I am a wordpress Developer too <br><b>Click Below to hire me</b>  </p>
+    <input type="submit" href="#hireme" value="hire me" placeholder="hire me" class="btn btn-primary">
+</div>
+<div class="col-md-1 " >
+    <div class="media">
+        <img class="ml-2" src={% static 'profile.png' %} alt="Generic placeholder image" width="260px">
+</div>
+</div>    
+</div>
+</div>
+<div class="container">
+    <center>
+    
+       <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1  class="d-flex justify-content-center"> My Services</h1>
+    <hr class="d-flex bg-primary " style="width:150px ; border-top:4px solid aqua; " >
+       </div>
+       </div>
+          
+    
+        </center>
+      
+       
+</div>
+
+<div class="container-fluid px-4">
+    <div class="row gx-5">
+        <div class="col-md-3 " style="border:4px solid white ;" >
+            <img src={% static 'coding.png' %} class="img rounded-circle ml-3 p-2 im" width="80px">
+            <b><h4>Web Development  </h4></b>
+            <p>I can workon Html5,css3,javascript and bootstrap Framework</p>
+        </div>
+        <div class="col-md-3" style="background-color:aqua ; color: black;;">
+            <img src={% static 'seo.png' %} class="img rounded-circle ml-3 p-2 im" style=" border: 1px solid black"  width="80px">
+            <b><h4>SEO  </h4></b>
+            <p>I can help Your site to optimize it More efficiently</p>
+        </div>
+        <div class="col-md-3" style="background-color:#0481FE ; border:4px solid white ; ">
+            <img src={% static 'wordpress.png' %} style="background-color: white;border:1px solid black "  class="img rounded-circle ml-3 p-2 im" width="80px">
+            <b><h4>wordpress Developer  </h4></b>
+            <p>I can workon Html5,css3,javascript and bootstrap Framework</p>
+        </div>
+        <div class="col-md-3" style="background-color:#4deabb ; color: black;">
+          <img src={% static 'python.png' %} style="background-color:white ; border:1px solid black;" class="img rounded-circle ml-3 p-2 im" width="80px">
+          <b><h4>Python Programmer </h4></b>
+          <p>I Can code on python and has backend knowledge of django-framework</p>
+      </div>
+    </div>
+</div>
+<div class="container mx-auto ">
+ <h1  class="d-flex justify-content-center mt-3 p-4"> My Progress</h1>
+ <hr class="bg-primary " style="width:150px ; border-top:4px solid aqua; " >
+</div>
+<div class="container ">
+  <div class="row ">
+    <div class="col-lg-6 p-3">
+      <h4 >Frontend Languages </h4>
+      <div class="progress">
+        
+        <div class="progress-bar-striped bg-success" role="progressbar" style="width: 50%;height: 10px; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="0"></div>
+      </div>
+    </div>
+    <div class="col-lg-6 p-3">
+      <h4 >Python-Django </h4>
+      <div class="progress">
+        
+        <div class="progress-bar-striped bg-warning" role="progressbar" style="width: 50%;height: 10px; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="0"></div>
+      </div>
+    </div>
+    <div class="col-lg-6 p-3">
+      <h4 >Wordpress </h4>
+      <div class="progress">
+        
+        <div class="progress-bar-striped bg-info" role="progressbar" style="width: 60%;height: 10px; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="0"></div>
+      </div>
+    </div>
+    <div class="col-lg-6 p-3">
+      <h4 >MySQL </h4>
+      <div class="progress">
+        
+        <div class="progress-bar-striped bg-success" role="progressbar" style="width: 70%;height: 10px; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="0"></div>
+      </div>
+    </div>
+    <div class="col-lg-6 p-3">
+      <h4 >Python </h4>
+      <div class="progress">
+        
+        <div class="progress-bar-striped bg-danger" role="progressbar" style="width: 75%;height: 10px; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="0"></div>
+      </div>
+    </div>
+    <div class="col-lg-6 p-3">
+      <h4 >Cyber Security & Networking</h4>
+      <div class="progress">
+        
+        <div class="progress-bar-striped bg-success" role="progressbar" style="width: 75%;height: 10px; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="0"></div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</div>
+
+
+<div class="container-fluid bg-dark mt-4 p-2 " >
+  <div class="media" style="background-color: rgb(22, 22, 22) ; color: white;">
+    <div class="media-body">
+      <h1 class="mt-0 mb-1">About me</h1>
+      
+      <p class="font-weight-bold text-justify" >I am a Full Stack Web developer and <b class="font-italic text-danger text-justify" >A Self Learned Ethical Hacker. </b>
+        <p class="text-justify"> I am Faizal Imam ,A full stack webdeveloper and a ethical Hacker,I have done many projects on Wordpress and delivered 5+ sites to my happy clients.Being having a Multitasking personality i Can workon Canva designs and Video editing.I Love to workon cybersecurity projects and Frontend designs to make it look more beautiful and attractive.I have created many projects on cybersecurity by using python language.</p>
+    </div>
+    <img class="ml-3" src={% static 'p2.jpeg' %} alt="Generic placeholder image" width="230px">
+  </div>
+
+</div>
+
+</div>
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid my-5">
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #3360c1"
+          >
+    <!-- Grid container -->
+    <div class="container-fluid p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">
+              Devil Coder
+            </h5>
+            <p >
+              Contact me if you want me to work on your projects and work with you.I can also optimize and re-design your sites as well as can improve functionality as per requirements.
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold" >Mail Me</h6>
+            <form method="Post" id="hireme">{%csrf_token%}
+              <div class="form-group">
+                <label for="exampleFormControlInput1" class="mr-5 text-center">Email address</label><br>
+                <input type="email" class="form-control w-10 ml-5" style="width:250px ;" name="emal" id="exampleFormControlInput1"  placeholder="name@example.com">
+              </div>
+              <div class="form-group ml-5">
+                <label for="exampleFormControlTextarea1">Your Text</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="utxt" ></textarea>
+                <input type="submit" class="btn btn-warning mt-3">
+              </div>
+            </form>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> Bhopal(M.P)</p>
+            <p><i class="fas fa-envelope mr-3"></i> Faizalimam259@gmail.com</p>
+            
+          </div>
+          
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">Follow Me</h6>
+
+            
+          
+            <!-- Instagram -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #ac2bac"
+               href="https://www.instagram.com/devilboy_imam/?hl=en"
+               role="button"
+               ><i class="fab fa-instagram"></i
+              ></a>
+
+            <!-- Linkedin -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #0082ca"
+               href="https://www.linkedin.com/in/faizal-imam-45a561236/"
+               role="button"
+               ><i class="fab fa-linkedin-in"></i
+              ></a>
+            <!-- Github -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #333333"
+               href="https://github.com/Faizalimam990/Faizalimam990"
+               role="button"
+               ><i class="fab fa-github"></i
+              ></a>
+              
+          </div>
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      ©Made BY Faizal Imam
+      
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+
+
+
+</body>
+
+</html>

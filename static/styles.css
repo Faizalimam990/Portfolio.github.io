@@ -1,0 +1,89 @@
+h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  position: relative;
+  animation: 
+    typing 3.5s steps(40),
+    blink-caret .75s step-end infinite;
+    font-size: 40px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+.text2
+{
+  margin-top: 5px;
+  padding: 10px;
+}
+.btn-primary
+{
+  background-color: orange;
+  margin-left: 10px;
+}
+
+.jumbotron-fluid {
+position: relative;
+
+}
+
+.jumbotron-fluid h3 {
+color: #fff;
+font-size: 5em;
+position: absolute;
+transform: translate(-50%, -50%);
+margin-left: 450px;
+}
+
+.jumbotron-fluid h3:nth-child(1) {
+color: transparent;
+-webkit-text-stroke: 2px #03a9f4;
+}
+
+.jumbotron-fluid :nth-child(2) {
+color: #03a9f4;
+animation: animate 4s ease-in-out infinite;
+
+}
+
+
+
+
+.line
+{   margin-top: 100px;
+  border-top:3px solid aqua;
+  animation-name: line2;
+  animation-duration: 4s;
+  animation-iteration-count:infinite;
+  margin-right: 770px;
+}
+@keyframes line2{
+  from{width: 0px;}
+  to{width: 420px;}
+}
+.im
+{
+  border: 1px solid whitesmoke;
+}
+.col-md-3
+{
+  background-color: rgb(225, 151, 38);
+  color: whitesmoke;
+}
+/*    */
+.center-ball
+{
+border-top: 5px solid aqua;
+width: 150px;
+}
